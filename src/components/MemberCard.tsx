@@ -46,7 +46,7 @@ const MemberCard = ({ member }: { member: Member }) => {
                         isZoomed
                         removeWrapper
                         alt="Relaxing app background"
-                        className="z-0  object-cover h-[105%]"
+                        className="z-0  object-cover"
                         src={member.image}
                     />
 

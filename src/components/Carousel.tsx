@@ -9,21 +9,25 @@ const images = [
         id: 1,
         img: image_a,
         alt: 'IEEE',
+        width: 'ieee',
     },
     {
         id: 2,
         img: image_b,
         alt: 'IEEE Computer Society',
+        width: 'computer_society',
     },
     {
         id: 3,
         img: image_c,
         alt: 'Universidad Autonoma del Estado de Hidalgo',
+        width: 'uaeh',
     },
     {
         id: 4,
         img: image_d,
-        alt: 'Escuela Superior de Tlahuelilpan'
+        alt: 'Escuela Superior de Tlahuelilpan',
+        width: 'estl',
     },
 ];
 
@@ -31,11 +35,20 @@ const images = [
 interface CardProps {
     img: string;
     alt: string;
+    width: string;
 }
 
-const Card = ({ img, alt }: CardProps) => {
+const Card = ({ img, alt, width }: CardProps) => {
+
+    const sizeVariants = {
+        uaeh: 'w-[12rem]',
+        estl: 'w-[12rem]',
+        ieee: 'w-[16rem]',
+        computer_society: 'w-[16rem]',
+    }
+
     return (
-        <img src={img} alt={alt} className="lg:w-[50%] lg:h-[50%] w-[30%] h-[30%] lg:mx-6 mx-3"/>
+        <img src={img} alt={alt} className={`lg:w-[50%] lg:h-[50%] ${sizeVariants[width]} lg:mx-6 mx-3`}/>
     )
 };
 
@@ -45,7 +58,7 @@ export const Carousel = () => {
     <div className="mt-10 relative flex h-[200px] w-full flex-col items-center justify-center overflow-hidden">
         <Marquee pauseOnHover reverse className="[--duration:20s]">
             {images.map((image) => (
-                <Card key={image.id} img={image.img} alt={image.alt} />
+                <Card key={image.id} img={image.img} alt={image.alt} width={image.width}/>
             ))}
         </Marquee>
 
