@@ -9,38 +9,38 @@ const images = [
         id: 1,
         img: image_a,
         alt: 'IEEE',
-        width: 'ieee',
+        width: 'ieee' as WidthVariant,
     },
     {
         id: 2,
         img: image_b,
         alt: 'IEEE Computer Society',
-        width: 'computer_society',
+        width: 'computer_society' as WidthVariant,
     },
     {
         id: 3,
         img: image_c,
         alt: 'Universidad Autonoma del Estado de Hidalgo',
-        width: 'uaeh',
+        width: 'uaeh' as WidthVariant,
     },
     {
         id: 4,
         img: image_d,
         alt: 'Escuela Superior de Tlahuelilpan',
-        width: 'estl',
+        width: 'estl' as WidthVariant,
     },
 ];
 
+type WidthVariant = 'uaeh' | 'estl' | 'ieee' | 'computer_society';
 
 interface CardProps {
     img: string;
     alt: string;
-    width: string;
+    width: WidthVariant;
 }
 
 const Card = ({ img, alt, width }: CardProps) => {
-
-    const sizeVariants = {
+    const sizeVariants: Record<WidthVariant, string> = {
         uaeh: 'w-[12rem]',
         estl: 'w-[12rem]',
         ieee: 'w-[16rem]',
