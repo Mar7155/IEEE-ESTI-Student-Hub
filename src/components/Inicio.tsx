@@ -10,7 +10,7 @@ export const Inicio = () => {
   
   const navigate = useNavigate();
 
-  const disabled = false;
+  const disabled = true;
 
   return (
     <section className="flex flex-row items-center justify-center space-x-20" id="home">

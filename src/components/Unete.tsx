@@ -74,7 +74,7 @@ const CardGrid: React.FC = () => (
 );
 
 export const Unete: React.FC = () => {
-  const disabled = false;
+  const disabled = true;
 
   return (
     <section className="flex flex-col mt-12 mb-32" id="join">
