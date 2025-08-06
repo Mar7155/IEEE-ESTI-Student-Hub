@@ -5,6 +5,7 @@ import image_c from '@/assets/tallerSql.avif';
 import { bebasNeue, jetBrainsMono } from "@/lib/fonts";
 import { Button } from "@/components/ui/button";
 import JoinDialog from "./JoinDialog";
+import Link from "next/link";
 
 export const Inicio = () => {
     return (
@@ -28,9 +29,11 @@ export const Inicio = () => {
                                     Unirse
                                 </Button>
                             </JoinDialog>
-                            <Button className="bg-[#0371a4] text-white hover:bg-[#0371a4]/80 rounded-full py-4 px-6 cursor-pointer">
-                                Miembros
-                            </Button>
+                            <Link href="/members">
+                                <Button className="bg-[#0371a4] text-white hover:bg-[#0371a4]/80 rounded-full py-4 px-6 cursor-pointer">
+                                    Miembros
+                                </Button>
+                            </Link>
                         </div>
                     </div>
 
@@ -78,9 +81,11 @@ export const Inicio = () => {
                                     Unirse
                                 </Button>
                             </JoinDialog>
-                            <Button className="bg-[#0371a4] text-white hover:bg-[#0371a4]/80 rounded-full py-4 px-6 cursor-pointer sm:w-auto">
-                                Miembros
-                            </Button>
+                            <Link href="/members">
+                                <Button className="bg-[#0371a4] text-white hover:bg-[#0371a4]/80 rounded-full py-4 px-6 cursor-pointer sm:w-auto">
+                                    Miembros
+                                </Button>
+                            </Link> 
                         </div>
                     </div>
 

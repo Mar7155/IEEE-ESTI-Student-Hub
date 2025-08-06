@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align='center'>
+  <img width='400px' src='src/assets/logo.png' alt='IEEE - ESTl Student Branch'>
+<p>
+  
+<h1 align="center"> IEEE-ESTl Student Web Hub </h1>
 
-## Getting Started
+### La Rama Estudiantil IEEE-ESTl es una comunidad de estudiantes apasionados por la programación, la innovación y el conocimiento de nuevas tecnologías. En estos momentos se está renovando la página web por los web masters para que en un futuro próximas generaciones puedan igual modificar.
 
-First, run the development server:
+<h2 align="center">Funcionalidades</h2>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> [!TIP]
+> Como parte importante de sus funcionalidades fue crearlo como código abierto para que otras comunidades puedan hacer uso de este repositorio y moldear la página web de su rama estudiantil. Si se encuentra interesado en esto lea el partado “Instalacion”.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<li>Dar a conocer los beneficios de pertenecer a la rama</li>
+<li>Mostrar los eventos que se realizan dentro de la rama, como hackatones, talleres, cursos, conferencias y más.</li>
+<li>Promocionar los próximos eventos a realizar</li>
+<li>Atender dudas con respecto a la IEEE y a la rama estudiantil</li>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h2 align="center">Herramientas utilizadas </h2>
+<li>Next.js</li>
+<li>Typescript</li>
+<li>Tailwind</li>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<h2 align="center">Librerías de componentes utilizadas </h2>
+<li>Magic UI</li>
+<li>shadcn/ui</li>
 
-## Learn More
+<h2 align="center">Instalación</h2>
+<p>Para hacer uso de este proyecto de manera local es necesario descargar el código desde el apartado “code” o si lo desea puede ejecutar los siguientes comandos en la terminal de visual studio code.</p>
 
-To learn more about Next.js, take a look at the following resources:
+- `git clone https://github.com/IEEE-ESTl/IEEE-ESTI-New-Student-Hub.git` para clonar el proyecto
+- `cd IEEE-ESTI-New-Student-Hub` para cambiarse al directorio donde se clonó el proyecto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `bun install` para instalar todas las dependencias del proyecto
+- `bun dev` para abrir una previsualización del proyecto de forma local
+- `bun preview` haciendo énfasis en esta última línea de comando es muy importante a la hora de llevar a producción el proyecto, ya que combina el build y preview. El primero construye la página web y el segundo te muestra una previsualización de cómo se verá el proyecto una vez lanzado a producción 
