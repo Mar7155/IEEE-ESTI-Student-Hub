@@ -21,17 +21,7 @@ interface Card {
 }
 
 const cards: Card[] = [
-    {
-        id: 1,
-        title: "Welcome Back",
-        description: "Prepárate para un evento lleno de sorpresas, oportunidades y mucha actitud.",
-        fullDescription: "En este evento, podrás reecontrarte con tus amigos, conocer nuevos compañeros y arrancar el semestre con toda la energía.",
-        date: "14 de agosto de 2025",
-        location: "Auditorio de la ESTl",
-        category: "Evento",
-        instructor: "IEEE ESTl Student Branch",
-        image: "/welcomeback.jpeg",
-    },
+
     {
         id: 2,
         title: "Taller de React y Tailwind",

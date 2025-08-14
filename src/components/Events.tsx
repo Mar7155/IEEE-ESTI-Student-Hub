@@ -52,7 +52,51 @@ const events: Event[] = [
         category: "Taller",
         instructor: "Ángel Enrique Romero Cuevas",
         image: "/tallerSql.webp",
-    }
+    },
+    {
+        id: 4,
+        title: "Cinsoft 2024",
+        description: "Congreso de Software donde hubieron talleres, conferencias y mucho más",
+        fullDescription: "En este congreso se realizaron talleres, conferencias y mucho más, fue una gran oportunidad para que los estudiantes aprendieran sobre el mundo del software y la tecnología. El evento fue organizado por la IEEE - Escuela Superior de Tlahuelilpan Student Branch con apoyo de la Licenciatura en Ingeniería de Software.",
+        date: "28 de octubre de 2024",
+        location: "Escuela Superior de Tlahuelilpan",
+        category: "Congreso",
+        instructor: "IEEE - Escuela Superior de Tlahuelilpan Student Branch",
+        image: "/cinsoft.webp",
+    },
+    {
+        id: 5,
+        title: "Taller de Azure",
+        description: "Taller donde se aprendieron los fundamentos de Azure",
+        fullDescription: "En este taller se aprendieron los fundamentos de Azure, una plataforma de cloud computing de Microsoft, este taller fue de mucha utilidad para aquellos estudiantes que estaban interesados en aprender a programar y a crear sus propias aplicaciones en la nube.",
+        date: "29 de octubre de 2024",
+        location: "Escuela Superior de Tlahuelilpan",
+        category: "Taller",
+        instructor: "Brujería Tech",
+        image: "/tallerAzure.jpg",
+    },
+    {
+        id: 6,
+        title: "Taller de AWS",
+        description: "Taller donde se aprendieron los fundamentos de AWS",
+        fullDescription: "En este taller se aprendieron los fundamentos de AWS, una plataforma de cloud computing de Amazon, este taller fue de mucha utilidad para aquellos estudiantes que estaban interesados en aprender a programar y a crear sus propias aplicaciones en la nube. Se desarrolló una aplicación CRUD usando Node.js y Express.",
+        date: "29 de octubre de 2024",
+        location: "Escuela Superior de Tlahuelilpan",
+        category: "Taller",
+        instructor: "Ing. Hugo Alejandres",
+        image: "/tallerAWS.jpg",
+    },
+    {
+        id: 7,
+        title: "Welcome Back",
+        description: "Prepárate para un evento lleno de sorpresas, oportunidades y mucha actitud.",
+        fullDescription: "En este evento, podrás reecontrarte con tus amigos, conocer nuevos compañeros y arrancar el semestre con toda la energía.",
+        date: "14 de agosto de 2025",
+        location: "Auditorio de la ESTl",
+        category: "Evento",
+        instructor: "IEEE ESTl Student Branch",
+        image: "/welcomeback.jpeg",
+    },
 ]
 
 export default function Events() {
@@ -108,6 +152,10 @@ export default function Events() {
             return 'bg-purple-100 text-purple-800 hover:bg-purple-200'
           case 'hackathon':
             return 'bg-green-100 text-green-800 hover:bg-green-200'
+          case 'congreso':
+            return 'bg-red-100 text-red-800 hover:bg-red-200'
+          case 'evento':
+            return 'bg-yellow-100 text-yellow-800 hover:bg-yellow-200'
           default:
             return 'bg-gray-100 text-gray-800 hover:bg-gray-200'
         }
