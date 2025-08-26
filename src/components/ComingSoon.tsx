@@ -32,7 +32,7 @@ const cards: Card[] = [
         category: "Taller",
         instructor: "Paulo Mantilla",
         image: "/flyer-1.png",
-        registerLink: "https://www.google.com"
+        registerLink: "/register-workshop"
     },
     {
         id: 3,
@@ -44,7 +44,7 @@ const cards: Card[] = [
         category: "Taller",
         instructor: "Mario Lozano",
         image: "/flyer-2.png",
-        registerLink: "https://www.google.com"
+        registerLink: "/register-workshop"
     }
 ]
 
@@ -285,10 +285,10 @@ export default function ComingSoon() {
                                         <div className="flex justify-center items-center">
                                             <Button
                                                 className="bg-[#0371a4] hover:bg-[#0371a4]/80 text-white w-full cursor-pointer mt-5"
-                                                disabled={true}
+                                                disabled={false}
                                                 onClick={() => window.open(selectedCard.registerLink, '_blank')}
                                             >
-                                                Link de registro disponible pronto
+                                                Registrate aquí
                                             </Button>
                                         </div>
                                         )}
