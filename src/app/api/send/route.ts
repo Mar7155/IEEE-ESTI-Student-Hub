@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
 
         const data = await resend.emails.send({
             from: 'IEEE Student Branch - ESTl <noreply@ieee-estl.com>',
-            to: ['paulo.mantilla@ieee.org', 'mariolozano@ieee.org'],
+            to: ['paulo.mantilla@ieee.org', 'mariolozano@ieee.org', 'lgmalkih@gmail.com'],
             subject: 'Nueva solicitud de unión a la IEEE Student Branch - ESTl',
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
