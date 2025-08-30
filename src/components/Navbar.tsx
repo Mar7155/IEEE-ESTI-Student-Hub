@@ -35,7 +35,7 @@ export default function Navbar() {
                             
                             
                             <Link href={'/#join'} className={`${montserrat.className} text-black hover:scale-110 hover:text-[#035b98] px-3 py-2 rounded-md text-md font-medium transition-all duration-300`}>
-                                UNETE
+                                ÚNETE
                             </Link>
 
                             <Link href={'/#faq'} className={`${montserrat.className} text-black hover:scale-110 hover:text-[#035b98] px-3 py-2 rounded-md text-md font-medium transition-all duration-300`}>

@@ -3,6 +3,8 @@ import paulo from '@/assets/memberImages/paulo.webp';
 import mario from '@/assets/memberImages/mario.webp';
 import abdiel from '@/assets/memberImages/abdiel.webp';
 import ivan from '@/assets/memberImages/ivan.webp';
+import malkhi from '@/assets/memberImages/malkhi.webp';
+import roberto from '@/assets/memberImages/roberto.webp';
 
 export const members = [
     {
@@ -63,6 +65,34 @@ export const members = [
                 name: 'Diseñador',
                 description: 'Diseñador de la rama',
                 icon: 'brush',
+                color: 'bg-black',
+                iconColor: 'text-white',
+            }
+        ]
+    },
+    {
+        name: 'Malkhi Lopéz',
+        date: 'Miembro desde 2025',
+        image: malkhi,
+        badges: [
+            {
+                name: 'Secretaria',
+                description: 'Encargada de la administración y organización de la rama',
+                icon: 'secretary',
+                color: 'bg-black',
+                iconColor: 'text-white',
+            }
+        ]
+    },
+    {
+        name: 'Roberto Angel',
+        date: 'Miembro desde 2025',
+        image: roberto,
+        badges: [
+            {
+                name: 'Marketing',
+                description: 'Encargado de promocionar la comunidad y sus actividades',
+                icon: 'marketing',
                 color: 'bg-black',
                 iconColor: 'text-white',
             }
