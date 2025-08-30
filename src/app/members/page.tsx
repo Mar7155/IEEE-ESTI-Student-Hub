@@ -16,7 +16,7 @@ export default function Members() {
         <main className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
             <div className="w-full max-w-7xl mx-auto">
                 <h1 className={`${bebasNeue.className} text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-[#0371a4] text-center mb-8 mt-14 sm:mb-12 lg:mb-16`}>
-                    Miembros
+                    Comité-Directivo
                 </h1>
                 <div className="flex flex-col items-center justify-center lg:grid lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8">
                     {members.map((member, idx) => (
